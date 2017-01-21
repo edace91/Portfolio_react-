@@ -19,7 +19,7 @@ export default class Main extends React.Component {
     return (
       <MuiThemeProvider>
       <div>
-      	<NavBar />
+      	<NavBar/>
         <Container>
           {this.props.children}
         </Container>

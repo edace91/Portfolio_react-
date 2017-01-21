@@ -24,17 +24,24 @@ export default class NavBar extends React.Component {
       <div>
         <Drawer open={this.state.open}>
           <Link to={'/'}>
-            <MenuItem onClick={this.handleToggle}>Welcome</MenuItem>
+            <MenuItem onClick={this.handleToggle}>Home</MenuItem>
           </Link>
           <Link to={'secondpage'}>
-            <MenuItem onClick={this.handleToggle}>Second Page</MenuItem>
+            <MenuItem onClick={this.handleToggle}>About</MenuItem>
           </Link>
           <Link to={'thirdpage'}>
-            <MenuItem onClick={this.handleToggle}>Third Page</MenuItem>
+            <MenuItem onClick={this.handleToggle}>Connect</MenuItem>
+          </Link>
+          <Link to={'thirdpage'}>
+            <MenuItem onClick={this.handleToggle}>Projects</MenuItem>
           </Link>
         </Drawer>
         <AppBar
-          title="Portfolio"
+          title="Eduardo Aceves"
+          //title={<img src="http://www.eduardoaceves.com/gallery/wp-content/uploads/2016/05/EA_partial-Logo.jpg"/>}
+          style={{boxShadow:
+              "none"
+          }}
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           onLeftIconButtonTouchTap={this.handleToggle}
         />
