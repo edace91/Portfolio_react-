@@ -4,8 +4,11 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
-
-
+import {List, ListItem} from 'material-ui/List';
+import ActionHome from 'material-ui/svg-icons/action/home';
+import ActionFace from 'material-ui/svg-icons/action/face';
+import ActionWork from 'material-ui/svg-icons/action/work';
+import CommunicationEmail from 'material-ui/svg-icons/communication/email';
 
 
 export default class NavBar extends React.Component {
@@ -24,18 +27,18 @@ export default class NavBar extends React.Component {
     return (
       <div>
         <Drawer open={this.state.open}>
-          <Link to={'/'}>
-            <MenuItem onClick={this.handleToggle}>Home</MenuItem>
-          </Link>
-          <Link to={'secondpage'}>
-            <MenuItem onClick={this.handleToggle}>About</MenuItem>
-          </Link>
-          <Link to={'thirdpage'}>
-            <MenuItem onClick={this.handleToggle}>Connect</MenuItem>
-          </Link>
-          <Link to={'thirdpage'}>
-            <MenuItem onClick={this.handleToggle}>Projects</MenuItem>
-          </Link>
+          <List>
+            <Link to={'/'} style={{ color: "#303030"}}>
+              <ListItem onClick={this.handleToggle} primaryText="Home" rightIcon={<ActionHome />} />
+            </Link>
+            <Link to={'secondpage'} style={{ color: "#303030"}}>
+              <ListItem onClick={this.handleToggle} primaryText="About" rightIcon={<ActionFace />} />
+            </Link>
+            <Link to={'thirdpage'} style={{ color: "#303030"}}>
+              <ListItem onClick={this.handleToggle} primaryText="Work" rightIcon={<ActionWork/>} />
+            </Link>
+              <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />
+          </List>
         </Drawer>
         <AppBar
           //title="Eduardo Aceves"
