@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router'
-
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
+
 
 
 
@@ -37,11 +38,13 @@ export default class NavBar extends React.Component {
           </Link>
         </Drawer>
         <AppBar
-          title="Eduardo Aceves"
-          //title={<img src="http://www.eduardoaceves.com/gallery/wp-content/uploads/2016/05/EA_partial-Logo.jpg"/>}
-          style={{boxShadow:
-              "none"
+          //title="Eduardo Aceves"
+          title={<img src="http://www.eduardoaceves.com/gallery/wp-content/uploads/2016/05/EA_partial-Logo.jpg" style={{ width: '100px'}} alt="Eduardo Aceves"/>}
+          style={{
+            backgroundColor: "white",
+            boxShadow: "none"
           }}
+          color= ""
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           onLeftIconButtonTouchTap={this.handleToggle}
         />
