@@ -3,12 +3,12 @@ import { Link } from 'react-router'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
-import MenuItem from 'material-ui/MenuItem'
 import {List, ListItem} from 'material-ui/List';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import ActionFace from 'material-ui/svg-icons/action/face';
 import ActionWork from 'material-ui/svg-icons/action/work';
 import CommunicationEmail from 'material-ui/svg-icons/communication/email';
+import IconButton from 'material-ui/IconButton';
 
 
 export default class NavBar extends React.Component {
@@ -23,7 +23,11 @@ export default class NavBar extends React.Component {
     this.setState({open: !this.state.open})
   }
 
+
+
   render() {
+
+
     return (
       <div>
         <Drawer open={this.state.open}>
@@ -38,16 +42,13 @@ export default class NavBar extends React.Component {
               <ListItem onClick={this.handleToggle} primaryText="Work" rightIcon={<ActionWork/>} />
             </Link>
               <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />
+              
           </List>
+         <IconButton iconClassName="muidocs-icon-custom-github"/>
         </Drawer>
         <AppBar
-          //title="Eduardo Aceves"
-          title={<img src="http://www.eduardoaceves.com/gallery/wp-content/uploads/2016/05/EA_partial-Logo.jpg" style={{ width: '100px'}} alt="Eduardo Aceves"/>}
-          style={{
-            backgroundColor: "white",
-            boxShadow: "none"
-          }}
-          color= ""
+          title={<img src="../../images/EA_logo.jpg" style={{ width: '100px'}} alt="Eduardo Aceves"/>}
+          style={{ backgroundColor: "white", padding: "15px", boxShadow: "none"}}
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           onLeftIconButtonTouchTap={this.handleToggle}
         />

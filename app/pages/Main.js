@@ -13,8 +13,11 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 // -----------------------------------------------------------------
-import NavBar from '../components/NavBar'
 // import NavBar from '../components/Navbar'
+import NavBar from '../components/NavBar'
+// import Gallery from '../components/GallerySection'
+import GallerySection from '../components/GallerySection'
+
 
 export default class Main extends React.Component {
 
@@ -25,6 +28,8 @@ export default class Main extends React.Component {
       	<NavBar/>
         <Container>
           {this.props.children}
+          <br/>
+          <GallerySection/>
         </Container>
       </div>
       </MuiThemeProvider>
