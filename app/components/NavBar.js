@@ -9,12 +9,15 @@ import ActionFace from 'material-ui/svg-icons/action/face';
 import ActionWork from 'material-ui/svg-icons/action/work';
 import CommunicationEmail from 'material-ui/svg-icons/communication/email';
 import RaisedButton from 'material-ui/RaisedButton';
-
+import FlatButton from 'material-ui/FlatButton';
 
 
 const styles = {
   imageInput: {
-    margin: 24,
+    margin: 10,
+    padding: 0,
+    
+
   },
 };
 
@@ -48,11 +51,36 @@ export default class NavBar extends React.Component {
               <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />  
           </List>
           
-          <RaisedButton
-            href="https://github.com/callemall/material-ui"
+          <FlatButton
+            href="https://github.com/edace91"
             target="_blank"
             secondary={false}
             icon={<img src="../../images/git.svg"/>}
+            style={styles.imageInput}
+          />
+
+          <FlatButton
+            href="Profilehttps://www.linkedin.com/in/aceveseduardo"
+            target="_blank"
+            secondary={false}
+            icon={<img src="../../images/in.svg"/>}
+            style={styles.imageInput}
+          />
+
+          <FlatButton
+            href="https://www.behance.net/eduardoaceves"
+            target="_blank"
+            secondary={false}
+            icon={<img src="../../images/be.svg"/>}
+            style={styles.imageInput}
+          />
+
+
+          <FlatButton
+            href="https://vimeo.com/user14562503"
+            target="_blank"
+            secondary={false}
+            icon={<img src="../../images/vim.svg"/>}
             style={styles.imageInput}
           />
 
