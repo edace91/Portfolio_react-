@@ -15,8 +15,8 @@ export default class Welcome extends React.Component {
         <Col md={8} offset={{ md: 2 }}>
           <Card>
             <CardTitle
-              title="Eduardo Aceves"
-              subtitle="Designer"
+              title="Welcome"
+              subtitle="to my portfolio"
             />
             <CardText>
               I hope this serves as a good starting point for everyone! This example should serve as a good example of how to layout your React applications. It also incorporates npm packages for a grid system and a front-end componenet library built for React.This is cooooool

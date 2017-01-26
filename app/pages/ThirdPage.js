@@ -6,6 +6,7 @@ import AppBar from 'material-ui/AppBar';
 
 import { Card, CardTitle, CardText } from 'material-ui/Card'
 
+import GallerySection from '../components/GallerySection'
 
 export default class ThirdPage extends React.Component {
 
@@ -15,13 +16,15 @@ export default class ThirdPage extends React.Component {
         <Col md={8} offset={{ md: 2 }}>
           <Card>
             <CardTitle
-              title="Welcome To My Third Page!"
-              subtitle="WooHoo"
+              title="Projects"
+              subtitle=" web design"
             />
             <CardText>
-              We just navigated to our third page!!!
+              Click on image to see more information
             </CardText>
           </Card>
+          <br/>
+          <GallerySection/>
         </Col>
       </Row>
     );

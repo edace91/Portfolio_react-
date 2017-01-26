@@ -8,8 +8,15 @@ import ActionHome from 'material-ui/svg-icons/action/home';
 import ActionFace from 'material-ui/svg-icons/action/face';
 import ActionWork from 'material-ui/svg-icons/action/work';
 import CommunicationEmail from 'material-ui/svg-icons/communication/email';
-import IconButton from 'material-ui/IconButton';
+import RaisedButton from 'material-ui/RaisedButton';
 
+
+
+const styles = {
+  imageInput: {
+    margin: 24,
+  },
+};
 
 export default class NavBar extends React.Component {
 
@@ -23,10 +30,7 @@ export default class NavBar extends React.Component {
     this.setState({open: !this.state.open})
   }
 
-
-
   render() {
-
 
     return (
       <div>
@@ -41,10 +45,17 @@ export default class NavBar extends React.Component {
             <Link to={'thirdpage'} style={{ color: "#303030"}}>
               <ListItem onClick={this.handleToggle} primaryText="Work" rightIcon={<ActionWork/>} />
             </Link>
-              <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />
-              
+              <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />  
           </List>
-         <IconButton iconClassName="muidocs-icon-custom-github"/>
+          
+          <RaisedButton
+            href="https://github.com/callemall/material-ui"
+            target="_blank"
+            secondary={false}
+            icon={<img src="../../images/git.svg"/>}
+            style={styles.imageInput}
+          />
+
         </Drawer>
         <AppBar
           title={<img src="../../images/EA_logo.jpg" style={{ width: '100px'}} alt="Eduardo Aceves"/>}

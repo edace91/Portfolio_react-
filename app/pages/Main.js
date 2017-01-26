@@ -16,7 +16,6 @@ injectTapEventPlugin();
 // import NavBar from '../components/Navbar'
 import NavBar from '../components/NavBar'
 // import Gallery from '../components/GallerySection'
-import GallerySection from '../components/GallerySection'
 
 
 export default class Main extends React.Component {
@@ -29,7 +28,7 @@ export default class Main extends React.Component {
         <Container>
           {this.props.children}
           <br/>
-          <GallerySection/>
+          
         </Container>
       </div>
       </MuiThemeProvider>

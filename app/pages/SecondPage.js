@@ -14,11 +14,11 @@ export default class SecondPage extends React.Component {
         <Col md={8} offset={{ md: 2 }}>
           <Card>
             <CardTitle
-              title="Welcome To My Second Page!"
-              subtitle="WooHoo"
+              title="About me"
+              subtitle="Eduardo Aceves"
             />
             <CardText>
-              We just navigated to our next page!!!
+              I am a designer, proficient in print and web design, currently enrolled in a coding bootcamp.
             </CardText>
           </Card>
         </Col>
