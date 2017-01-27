@@ -7,17 +7,20 @@ import {List, ListItem} from 'material-ui/List';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import ActionFace from 'material-ui/svg-icons/action/face';
 import ActionWork from 'material-ui/svg-icons/action/work';
+import HardwareComputer from 'material-ui/svg-icons/hardware/computer';
 import CommunicationEmail from 'material-ui/svg-icons/communication/email';
+import ContentCreate from 'material-ui/svg-icons/content/create';
+import HardwareGamepad from 'material-ui/svg-icons/hardware/gamepad';
+import ImageCamera from 'material-ui/svg-icons/image/camera';
+import AvVideocam from 'material-ui/svg-icons/AV/videocam';
 import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
-
+import ContentInbox from 'material-ui/svg-icons/content/inbox';
+import ContentSend from 'material-ui/svg-icons/content/send';
 
 const styles = {
   imageInput: {
     margin: 10,
-    padding: 0,
-    
-
   },
 };
 
@@ -33,6 +36,12 @@ export default class NavBar extends React.Component {
     this.setState({open: !this.state.open})
   }
 
+  handleNestedListToggle = (item) => {
+    this.setState({
+      open: item.state.open,
+    });
+  };
+
   render() {
 
     return (
@@ -45,10 +54,42 @@ export default class NavBar extends React.Component {
             <Link to={'secondpage'} style={{ color: "#303030"}}>
               <ListItem onClick={this.handleToggle} primaryText="About" rightIcon={<ActionFace />} />
             </Link>
-            <Link to={'thirdpage'} style={{ color: "#303030"}}>
-              <ListItem onClick={this.handleToggle} primaryText="Work" rightIcon={<ActionWork/>} />
-            </Link>
-              <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />  
+            
+              <ListItem 
+                primaryText="Work"
+                RightIcon={<ActionWork />}
+                initiallyOpen={false}
+                primaryTogglesNestedList={true}
+                nestedItems={[
+                  <ListItem
+                    key={1}
+                    primaryText="Web Design"
+                    leftIcon={<HardwareComputer />}
+                  />,
+                  <ListItem
+                    key={2}
+                    primaryText="Graphic Design"
+                    leftIcon={<ContentCreate />}
+                  />,
+                  <ListItem
+                    key={3}
+                    primaryText="Interactive"
+                    leftIcon={<HardwareGamepad />}
+                  />,
+                  <ListItem
+                    key={4}
+                    primaryText="Photography"
+                    leftIcon={<ImageCamera />}
+                  />,
+                  <ListItem
+                    key={5}
+                    primaryText="Video"
+                   leftIcon={<AvVideocam />}
+                  />,
+              ]}
+            />
+            
+            <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />  
           </List>
           
           <FlatButton
@@ -60,7 +101,7 @@ export default class NavBar extends React.Component {
           />
 
           <FlatButton
-            href="Profilehttps://www.linkedin.com/in/aceveseduardo"
+            href="https://www.linkedin.com/in/aceveseduardo"
             target="_blank"
             secondary={false}
             icon={<img src="../../images/in.svg"/>}
