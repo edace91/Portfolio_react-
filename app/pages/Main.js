@@ -26,9 +26,7 @@ export default class Main extends React.Component {
       <div>
       	<NavBar/>
         <Container fluid={false}>
-          {this.props.children}
-          <br/>
-          
+          {this.props.children} 
         </Container>
       </div>
       </MuiThemeProvider>

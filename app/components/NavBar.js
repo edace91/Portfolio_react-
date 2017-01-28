@@ -51,13 +51,13 @@ export default class NavBar extends React.Component {
             <Link to={'/'} style={{ color: "#303030"}}>
               <ListItem onClick={this.handleToggle} primaryText="Home" rightIcon={<ActionHome />} />
             </Link>
-            <Link to={'secondpage'} style={{ color: "#303030"}}>
+            <Link to={'About'} style={{ color: "#303030"}}>
               <ListItem onClick={this.handleToggle} primaryText="About" rightIcon={<ActionFace />} />
             </Link>
             
               <ListItem 
                 primaryText="Work"
-                RightIcon={<ActionWork />}
+                rightIcon={<ActionWork />}
                 initiallyOpen={false}
                 primaryTogglesNestedList={true}
                 nestedItems={[

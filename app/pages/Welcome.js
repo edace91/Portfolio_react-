@@ -19,18 +19,18 @@ export default class Welcome extends React.Component {
               subtitle="to my portfolio"
             />
             <CardText>
-              I hope this serves as a good starting point for everyone! This example should serve as a good example of how to layout your React applications. It also incorporates npm packages for a grid system and a front-end componenet library built for React.This is cooooool
+              Welcome to my portfolio! Hope you like what you see and contact me, thank you! 
             </CardText>
             <CardActions>
-              <Link to={'secondpage'}>
+              <Link to={'About'}>
                 <RaisedButton
-                  label="Go to Second Page"
+                  label="about me"
                   primary={true}
                 />
               </Link>
-              <Link to={'thirdpage'}>
+              <Link to={'Gallery/'}>
                 <RaisedButton
-                  label="Go to third Page"
+                  label="Gallery"
                   secondary={true}
                 />
               </Link>
