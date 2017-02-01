@@ -9,11 +9,7 @@ export default class Intro extends React.Component {
     return (
       <div>
       	<Row>
-          <GallerySection/>
-      	</Row>
-     	<Row>
-      	  <GalleryNavigation/>
-      	  
+        <GallerySection/>
       	</Row>
       </div>
       //add Button list linking to other page subjects.

@@ -61,34 +61,49 @@ export default class NavBar extends React.Component {
                 initiallyOpen={false}
                 primaryTogglesNestedList={true}
                 nestedItems={[
-                  <ListItem
-                    key={1}
-                    primaryText="Web Design"
-                    leftIcon={<HardwareComputer />}
-                  />,
-                  <ListItem
-                    key={2}
-                    primaryText="Graphic Design"
-                    leftIcon={<ContentCreate />}
-                  />,
-                  <ListItem
-                    key={3}
-                    primaryText="Interactive"
-                    leftIcon={<HardwareGamepad />}
-                  />,
-                  <ListItem
-                    key={4}
-                    primaryText="Photography"
-                    leftIcon={<ImageCamera />}
-                  />,
-                  <ListItem
-                    key={5}
-                    primaryText="Video"
-                   leftIcon={<AvVideocam />}
-                  />,
-              ]}
-            />
+                
+                  
+                    <ListItem
+                      key={1}
+                      primaryText="Web Design"
+                      onClick={this.handleToggle}
+                      leftIcon={<HardwareComputer />}
+                    />,
+                  
+                  
+                    <ListItem
+                      key={2}
+                      primaryText="Graphic Design"
+                      onClick={this.handleToggle}
+                      leftIcon={<ContentCreate />}
+                    />,
+                 
+                  
+                    <ListItem
+                      key={3}
+                      primaryText="Interactive"
+                      onClick={this.handleToggle}
+                      leftIcon={<HardwareGamepad />}
+                    />,
+                  
+                    <ListItem
+                      key={4}
+                      primaryText="Photography"
+                      onClick={this.handleToggle}
+                      leftIcon={<ImageCamera />}
+                    />,
+                  
+                  
+                    <ListItem
+                      key={5}
+                      primaryText="Video"
+                      onClick={this.handleToggle}
+                      leftIcon={<AvVideocam />}
+                    />,  
+                ]}
+              />
             
+
             <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />  
           </List>
           
@@ -124,7 +139,6 @@ export default class NavBar extends React.Component {
             icon={<img src="../../images/vim.svg"/>}
             style={styles.imageInput}
           />
-
         </Drawer>
         <AppBar
           title={<img src="../../images/EA_logo.jpg" style={{ width: '100px'}} alt="Eduardo Aceves"/>}

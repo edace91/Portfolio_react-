@@ -28,7 +28,7 @@ export default class Welcome extends React.Component {
                   primary={true}
                 />
               </Link>
-              <Link to={'Gallery/'}>
+              <Link to={'Gallery'}>
                 <RaisedButton
                   label="Gallery"
                   secondary={true}

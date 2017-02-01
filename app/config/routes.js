@@ -23,11 +23,11 @@ module.exports = (
       <Route path="About" component={About}/>
       <Route path="Gallery" component={Gallery}>
       	<IndexRoute component={Intro}/>
-      		<Route path="GraphicDesign" component={GraphicDesign}/>
-      		<Route path="Interactive" component={Interactive}/>
-      		<Route path="Photography" component={Photography}/>
-      		<Route path="Video" component={Video}/>
-      		<Route path="WebDesign" component={WebDesign}/>
+      	<Route path="GraphicDesign" component={GraphicDesign}/>
+      	<Route path="Interactive" component={Interactive}/>
+      	<Route path="Photography" component={Photography}/>
+      	<Route path="Video" component={Video}/>
+      	<Route path="WebDesign" component={WebDesign}/>
       </Route>
     </Route>
   </Router>
