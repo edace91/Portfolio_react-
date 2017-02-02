@@ -23,13 +23,21 @@ export default class GalleryNavigation extends React.Component {
   render() {
     return (
       <Paper zDepth={1}>
-        <BottomNavigation selectedIndex={this.state.selectedIndex}>
+        <BottomNavigation selectedIndex={this.state.selectedIndex} 
+          style= {{
+            padding: "20px",
+            position: "fixed",
+            left:"0px"
+
+          }}
+        >
           
           <Link to={'Gallery/WebDesign'}>
             <BottomNavigationItem
               label="Web Design"
               icon={HardwareComputer}
               onTouchTap={() => this.select(0)}
+              
             />
           </Link>
 

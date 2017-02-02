@@ -25,9 +25,7 @@ export default class Main extends React.Component {
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
       <div>
       	<NavBar/>
-        <Container fluid={false}>
-          {this.props.children} 
-        </Container>
+        {this.props.children}  
       </div>
       </MuiThemeProvider>
     );

@@ -45,7 +45,7 @@ export default class NavBar extends React.Component {
   render() {
 
     return (
-      <div>
+      <div style={{ backgroundColor: "#0288D1"}}>
         <Drawer open={this.state.open}>
           <List>
             <Link to={'/'} style={{ color: "#303030"}}>

@@ -13,7 +13,14 @@ export default class Welcome extends React.Component {
     return (
       <Row>
         <Col md={12}>
-          <Card>
+          <Card 
+              style={{ 
+                backgroundColor: "#FDD835",
+                padding: "50px",
+                border:"30px",
+                borderColor:"#FDD835"
+              }}
+              containerStyle= {{border:"30px"}}>
             <CardTitle
               title="Welcome"
               subtitle="to my portfolio"
@@ -25,13 +32,13 @@ export default class Welcome extends React.Component {
               <Link to={'About'}>
                 <RaisedButton
                   label="about me"
-                  primary={true}
+                  style={{ Color: "#00BCD4"}}
                 />
               </Link>
               <Link to={'Gallery'}>
                 <RaisedButton
                   label="Gallery"
-                  secondary={true}
+                  style={{ Color: "#00BCD4"}}
                 />
               </Link>
             </CardActions>

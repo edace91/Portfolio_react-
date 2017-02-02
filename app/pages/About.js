@@ -12,7 +12,7 @@ export default class About extends React.Component {
     return (
       <Row>
         <Col md={8} offset={{ md: 2 }}>
-          <Card>
+          <Card style={{ backgroundColor: "#00BCD4"}}>
             <CardTitle
               title="About me"
               subtitle="Eduardo Aceves"
