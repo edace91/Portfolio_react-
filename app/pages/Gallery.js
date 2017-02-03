@@ -17,8 +17,9 @@ export default class Gallery extends React.Component {
           {this.props.children} 
         </Row>
       	<Row>
-      	  <GalleryNavigation/>
+      	  
       	</Row>
+        <GalleryNavigation/>
       </Col>
      
     );

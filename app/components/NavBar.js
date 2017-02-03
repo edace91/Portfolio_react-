@@ -48,10 +48,10 @@ export default class NavBar extends React.Component {
       <div style={{ backgroundColor: "#0288D1"}}>
         <Drawer open={this.state.open}>
           <List>
-            <Link to={'/'} style={{ color: "#303030"}}>
+            <Link to={'/'} style={{ "text-decoration": "none"}}>
               <ListItem onClick={this.handleToggle} primaryText="Home" rightIcon={<ActionHome />} />
             </Link>
-            <Link to={'About'} style={{ color: "#303030"}}>
+            <Link to={'About'} style={{ "text-decoration": "none"}}>
               <ListItem onClick={this.handleToggle} primaryText="About" rightIcon={<ActionFace />} />
             </Link>
             
@@ -62,44 +62,50 @@ export default class NavBar extends React.Component {
                 primaryTogglesNestedList={true}
                 nestedItems={[
                 
-                  
+                  <Link to={'/Gallery/WebDesign'} style={{ "text-decoration": "none"}}>
                     <ListItem
                       key={1}
                       primaryText="Web Design"
                       onClick={this.handleToggle}
                       leftIcon={<HardwareComputer />}
-                    />,
+                    />
+                  </Link>,
                   
-                  
+                  <Link to={'/Gallery/GraphicDesign'} style={{ "text-decoration": "none"}}>
                     <ListItem
                       key={2}
                       primaryText="Graphic Design"
                       onClick={this.handleToggle}
                       leftIcon={<ContentCreate />}
-                    />,
-                 
+                    />
+                  </Link>,
                   
+                  <Link to={'/Gallery/Interactive'} style={{ "text-decoration": "none"}}>
                     <ListItem
                       key={3}
                       primaryText="Interactive"
                       onClick={this.handleToggle}
                       leftIcon={<HardwareGamepad />}
-                    />,
+                    />
+                  </Link>,
                   
+                  <Link to={'/Gallery/Photography'} style={{ "text-decoration": "none"}}>
                     <ListItem
                       key={4}
                       primaryText="Photography"
                       onClick={this.handleToggle}
                       leftIcon={<ImageCamera />}
-                    />,
-                  
-                  
+                    />
+                  </Link>,
+
+                  <Link to={'/Gallery/Video'} style={{ "text-decoration": "none"}}>
                     <ListItem
                       key={5}
                       primaryText="Video"
                       onClick={this.handleToggle}
                       leftIcon={<AvVideocam />}
-                    />,  
+                    />
+                  </Link>,  
                 ]}
               />
             

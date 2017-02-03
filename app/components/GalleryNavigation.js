@@ -25,14 +25,16 @@ export default class GalleryNavigation extends React.Component {
       <Paper zDepth={1}>
         <BottomNavigation selectedIndex={this.state.selectedIndex} 
           style= {{
-            padding: "20px",
+            padding: "30px",
             position: "fixed",
-            left:"0px"
+            bottom:"0px",
+            left:"0px",
+            width: "100%"
 
           }}
         >
           
-          <Link to={'Gallery/WebDesign'}>
+          <Link to={'/Gallery/WebDesign'}>
             <BottomNavigationItem
               label="Web Design"
               icon={HardwareComputer}
@@ -41,7 +43,7 @@ export default class GalleryNavigation extends React.Component {
             />
           </Link>
 
-          <Link to={'Gallery/GraphicDesign'}>
+          <Link to={'/Gallery/GraphicDesign'}>
             <BottomNavigationItem
               label="Graphic Design"
               icon={ContentCreate}
@@ -49,7 +51,7 @@ export default class GalleryNavigation extends React.Component {
             />
           </Link>
 
-          <Link to={'Gallery/Interactive'}>
+          <Link to={'/Gallery/Interactive'}>
             <BottomNavigationItem
               label="Interactive"
               icon={HardwareGamepad}
@@ -57,7 +59,7 @@ export default class GalleryNavigation extends React.Component {
             />
           </Link>
 
-          <Link to={'Gallery/Photography'}>
+          <Link to={'/Gallery/Photography'}>
             <BottomNavigationItem
               label="Photography"
               icon={ImageCamera}
@@ -65,7 +67,7 @@ export default class GalleryNavigation extends React.Component {
             />
           </Link>
 
-          <Link to={'Gallery/Video'}>
+          <Link to={'/Gallery/Video'}>
             <BottomNavigationItem
               label="Video"
               icon={AvVideocam}
