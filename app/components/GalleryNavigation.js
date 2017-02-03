@@ -25,12 +25,11 @@ export default class GalleryNavigation extends React.Component {
       <Paper zDepth={1}>
         <BottomNavigation selectedIndex={this.state.selectedIndex} 
           style= {{
-            padding: "30px",
+            padding: "20px",
             position: "fixed",
             bottom:"0px",
             left:"0px",
             width: "100%"
-
           }}
         >
           

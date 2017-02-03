@@ -110,7 +110,7 @@ export default class NavBar extends React.Component {
               />
             
 
-            <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} />  
+            <ListItem primaryText="Connect" rightIcon={<CommunicationEmail />} href="mailto:ed@eduardoaceves.com?Subject=Hello!"/>  
           </List>
           
           <FlatButton

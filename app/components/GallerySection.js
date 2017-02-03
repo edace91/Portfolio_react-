@@ -7,15 +7,16 @@ const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'none',
   },
   gridList: {
     display: 'flex',
     flexWrap: 'nowrap',
     overflowX: 'auto',
+
   },
   titleStyle: {
-    color: 'rgb(0, 188, 212)',
+    color: 'rgb(255, 255, 255)',
   },
 };
 
