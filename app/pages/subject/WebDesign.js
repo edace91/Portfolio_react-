@@ -2,7 +2,8 @@ import React from 'react'
 import { Row, Col } from 'react-grid-system'
 //import Web Design Gallery component
 import WebGallery from '../../components/WebGallery'
-import { Card, CardTitle, CardText } from 'material-ui/Card'
+import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
+import FlatButton from 'material-ui/FlatButton';
 
 export default class WebDesign extends React.Component {
 
@@ -15,14 +16,23 @@ export default class WebDesign extends React.Component {
             <WebGallery/>
           </Col>
           <Col md={5} >
-            <Card style={{ backgroundColor: "#00BCD4"}}>
+            <Card style={{ backgroundColor: "#9E9E9E"}}>
               <CardTitle
-                title="About me"
-                subtitle="Eduardo Aceves"
+                title="Web Design"
+                subtitle="Code is sickening hun"
               />
               <CardText>
-                I am a designer, proficient in print and web design, currently enrolled in a coding bootcamp.
+                I build cool stuff myself, thank you very much! From Html to CSS and JQuery to React, which I built this portfolio you are clicking through right now.
               </CardText>
+              <CardActions>
+                <FlatButton label="Information" />
+                <FlatButton label="More" />
+              </CardActions>
+              <CardMedia
+                overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+              >
+                <img src="../../images/ConceptArt.jpg" />
+              </CardMedia>  
             </Card>
           </Col>
         </Row>

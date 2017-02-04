@@ -11,8 +11,15 @@ export default class About extends React.Component {
   render() {
     return (
       <Row>
-        <Col md={8} offset={{ md: 2 }}>
-          <Card style={{ backgroundColor: "#00BCD4"}}>
+        <Col Col md={12}>
+          <Card style={{
+            backgroundColor: "#00796B",
+            padding: "50px",
+            border:"30px",
+            borderColor:"#00796B",
+            width:"100%",
+            left:"0"
+          }}>
             <CardTitle
               title="About me"
               subtitle="Eduardo Aceves"

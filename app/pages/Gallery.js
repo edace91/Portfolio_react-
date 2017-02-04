@@ -11,14 +11,14 @@ export default class Gallery extends React.Component {
 
   render() {
     return (
-     
-      <Col md={12} offset={{ md: 0 }}>	
-        <Row>
-          {this.props.children} 
-        </Row>
-        <GalleryNavigation/>
-      </Col>
-     
+      <div>
+        <Col md={12}>	
+          <Row>
+            {this.props.children} 
+          </Row>
+          <GalleryNavigation/>
+        </Col>
+      </div>
     );
   }
 }

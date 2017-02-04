@@ -15,10 +15,12 @@ export default class Welcome extends React.Component {
         <Col md={12}>
           <Card 
               style={{ 
-                backgroundColor: "#FDD835",
+                backgroundColor: "#FFA000",
                 padding: "50px",
                 border:"30px",
-                borderColor:"#FDD835"
+                borderColor:"#FFA000",
+                width:"100%",
+                left:"0"
               }}
               containerStyle= {{border:"30px"}}>
             <CardTitle
