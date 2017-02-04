@@ -22,10 +22,10 @@ export default class GalleryNavigation extends React.Component {
 
   render() {
     return (
-      <Paper zDepth={1} rounded={false} style={{ padding:"10px",position:"fixed", width:"100%", left:"0"}}>
+      <Paper zDepth={0} rounded={false} style={{ width:"100%", position:"absolute", left:"0"}}>
         <BottomNavigation selectedIndex={this.state.selectedIndex} 
           style= {{
-            padding: "10px",
+            padding: "20px",
             
             width: "100%"
           }}

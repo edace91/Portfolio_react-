@@ -1,7 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-grid-system'
 //import Web Design Gallery component
-import WebGallery from '../../components/WebGallery'
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton';
 
@@ -12,28 +11,42 @@ export default class WebDesign extends React.Component {
       //place the component between the First Row
       <div>
         <Row>
-          <Col md={7}>
-            <WebGallery/>
-          </Col>
-          <Col md={5} >
-            <Card style={{ backgroundColor: "#9E9E9E"}}>
-              <CardTitle
-                title="Web Design"
-                subtitle="Code is sickening hun"
-              />
+          <Col md={6} >
+            <Card style={{ backgroundColor: "#616161"}}>
+              <CardTitle>
+                <img style={{ width:"200px"}} src="../../images/votery_logo_Horizontal_KO.png" />
+              </CardTitle>
               <CardText>
-                I build cool stuff myself, thank you very much! From Html to CSS and JQuery to React, which I built this portfolio you are clicking through right now.
+                 Votery, it is the easiest way of tracking your representatives voting history. Just enter
+your state and your representatives will be listed for you to select. Once you choose a rep, their
+information and voting history will be listed for their most recent legislative choices.
               </CardText>
               <CardActions>
-                <FlatButton label="Information" />
-                <FlatButton label="More" />
+                <FlatButton label="Github" href="https://github.com/masonposch/votery"/>
+                <FlatButton label="Go to App" href="https://morning-garden-54466.herokuapp.com/votery"/>
               </CardActions>
-              <CardMedia
-                overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
-              >
-                <img src="../../images/ConceptArt.jpg" />
+              <CardMedia>
+                <img src="../../images/sitting.jpg" />
               </CardMedia>  
             </Card>
+          </Col>
+          <Col md={6}>
+            <Card style={{ backgroundColor: "#004D40"}}>
+              <CardTitle>
+                <img style={{ width:"250px"}} src="../../images/logo.png" />
+              </CardTitle>
+              <CardText>
+                 Pet travel made easy. Plan your trip find pet friendly places, be ready for anything.Our pets are part of our family and we would much rather take them along with us than leave them behind.
+              </CardText>
+              <CardActions>
+                <FlatButton label="Github" href="https://github.com/edace91/Petripper.git"/>
+                <FlatButton label="Go to App" href="http://enigmatic-savannah-90550.herokuapp.com/"/>
+              </CardActions>
+              <CardMedia>
+                <img src="../../images/dog_girl_beach.jpg" />
+              </CardMedia>  
+            </Card>
+            
           </Col>
         </Row>
       </div>

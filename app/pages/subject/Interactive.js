@@ -12,9 +12,6 @@ export default class Interactive extends React.Component {
       //place the Interactive component between the First Row
       <div>
       	<Row>
-          <Col md={7}>
-            <InteractiveGallery/>
-          </Col>
           <Col md={5}>
             <Card style={{ backgroundColor: "#9E9E9E"}}>
               <CardTitle
@@ -34,6 +31,9 @@ export default class Interactive extends React.Component {
                 <img src="../../images/ConceptArt.jpg" />
               </CardMedia>  
             </Card>
+          </Col>
+          <Col md={7}>
+            <InteractiveGallery/>
           </Col>
       	</Row>
       </div>

@@ -13,10 +13,10 @@ export default class About extends React.Component {
       <Row>
         <Col Col md={12}>
           <Card style={{
-            backgroundColor: "#00796B",
+            backgroundColor: "#546E7A",
             padding: "50px",
             border:"30px",
-            borderColor:"#00796B",
+            borderColor:"#546E7A",
             width:"100%",
             left:"0"
           }}>

@@ -12,10 +12,7 @@ export default class GraphicDesign extends React.Component {
       //place the component between the First Row
       <div>
         <Row>
-          <Col md={7}>
-            <GraphicGallery/>
-          </Col>
-          <Col md={5} >
+          <Col md={5}>
             <Card style={{ backgroundColor: "#9E9E9E"}}>
               <CardTitle
                 title="Graphic Design"
@@ -28,12 +25,16 @@ export default class GraphicDesign extends React.Component {
                 <FlatButton label="Information" />
                 <FlatButton label="More" />
               </CardActions>
-              <CardMedia
-                overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+              <CardMedia 
+                overlay={<CardTitle title="Campus Mail" subtitle="Marketing through email blasts" />}
               >
                 <img src="../../images/CoursePacket.jpg" />
+
               </CardMedia>  
             </Card>
+          </Col>
+          <Col md={7} >
+            <GraphicGallery/>
           </Col>
         </Row>
       </div>

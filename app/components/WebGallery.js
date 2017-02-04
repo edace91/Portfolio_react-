@@ -11,47 +11,40 @@ const styles = {
   },
   gridList: {
     width: "100%",
-    height: 450,
+    height: 500,
     overflowY: 'auto',
   },
 };
 
 const tilesData = [
   {
-    img: '../../images/DiazImmigrationLaw_final.jpg',
-    title: 'Logos',
+    
+    img: '../../images/sitting.jpg',
     author: 'Eduardo Aceves',
     featured: true,
   },
   {
-    img: '../../images/Fence.jpg',
-    title: 'Fence',
+    img: '../../images/Votery_logo.png',
     author: 'Eduardo Aceves',
+    featured: true,
   },
+  
   {
-    img: '../../images/Quidditch.jpg',
-    title: 'Quidditch',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/Airforce.jpg',
-    title: 'Airforce',
+    img: '../../images/dog_girl_beach.jpg',
     author: 'Eduardo Aceves',
     featured: true,
   },
   {
-    img: '../../images/haunted.jpg',
-    title: 'Haunted',
+    img: '../../images/logo.png',
+    author: 'Eduardo Aceves',
+    featured: true,
+  },
+  {
+    img: '../../images/icon_petripper.png',
     author: 'Eduardo Aceves',
   },
   {
-    img: '../../images/ConceptArt.jpg',
-    title: 'Crucible',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/CoursePacket.jpg',
-    title: 'Marketing',
+    img: '../../images/Petripper_gray.png',
     author: 'Eduardo Aceves',
   },
 ];

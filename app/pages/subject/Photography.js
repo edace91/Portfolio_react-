@@ -12,10 +12,7 @@ export default class Photography extends React.Component {
       //place the component between the First Row
       <div>
         <Row>
-          <Col md={7}>
-            <PhotographyGallery/>
-          </Col>
-          <Col md={5} >
+          <Col md={5}>
             <Card style={{ backgroundColor: "#9E9E9E"}}>
               <CardTitle
                 title="Photography"
@@ -34,6 +31,9 @@ export default class Photography extends React.Component {
                 <img src="../../images/haunted.jpg" />
               </CardMedia>  
             </Card>
+          </Col>
+          <Col md={7} >
+            <PhotographyGallery/>
           </Col>
 
         </Row>

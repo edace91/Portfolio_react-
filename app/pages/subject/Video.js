@@ -12,17 +12,14 @@ export default class Video extends React.Component {
       //place the component between the First Row
       <div>
         <Row>
-          <Col md={7}>
-            <VideoGallery/>
-          </Col>
-          <Col md={5} >
+          <Col md={5}>
             <Card style={{ backgroundColor: "#9E9E9E"}}>
               <CardTitle
                 title="Video"
                 subtitle="film and some animation"
               />
               <CardText>
-              A couple clips I have made, check the dem reel.
+              A couple clips I have made, check the demo reel.
               </CardText>
               <CardActions>
                 <FlatButton label="Information" />
@@ -34,6 +31,9 @@ export default class Video extends React.Component {
                 <img src="../../images/Quidditch.jpg" />
               </CardMedia>  
             </Card>
+          </Col>
+          <Col md={7} >
+            <VideoGallery/>
           </Col>
         </Row>
       </div>

@@ -9,7 +9,7 @@ import Intro from '../pages/Intro'
 import GraphicDesign from '../pages/subject/GraphicDesign'
 import Interactive from '../pages/subject/Interactive'
 import Photography from '../pages/subject/Photography'
-import Video from '../pages/subject/GraphicDesign'
+import Video from '../pages/subject/Video'
 import WebDesign from '../pages/subject/WebDesign'
 
 

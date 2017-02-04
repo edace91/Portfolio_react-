@@ -11,10 +11,10 @@ export default class Intro extends React.Component {
       <div>
         <Row>
             <Card style={{ 
-              backgroundColor: "#00BCD4",
+              backgroundColor: "#78909C",
               padding: "75px",
               border:"30px",
-              borderColor:"#FDD835"
+              borderColor:"#78909C"
             }}>
               <CardTitle
                 title="Gallery"
