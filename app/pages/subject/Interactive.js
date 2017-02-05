@@ -15,15 +15,15 @@ export default class Interactive extends React.Component {
           <Col md={5}>
             <Card style={{ backgroundColor: "#9E9E9E"}}>
               <CardTitle
-                title="Interactive"
-                subtitle="I Worked on a Video Game!"
+                title="The Runners"
+                subtitle="3D mobile Video Game"
               />
               <CardText>
-                Mainly 3D modeled the environment using Maya and Created Concept art for it. 
+                3D modeled the environment using Maya and Created Concept art for the Runners Video Game. 
               </CardText>
               <CardActions>
                 <FlatButton label="Information" />
-                <FlatButton label="More" />
+                <FlatButton label="Facebook" />
               </CardActions>
               <CardMedia
                 overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
