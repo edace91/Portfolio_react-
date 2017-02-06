@@ -19,8 +19,33 @@ const styles = {
 const tilesData = [
   
   {
+    img: '../../images/ScreenShot best.jpg',
+    author: 'Eduardo Aceves',
+    featured: true,
+  },
+  {
+    img: '../../images/sewer1.jpg',
+    author: 'Eduardo Aceves',   
+  },
+  {
+    img: '../../images/tool.jpg',
+    author: 'Eduardo Aceves',
+  },
+  {
     img: '../../images/ConceptArt.jpg',
-    title: 'Crucible',
+    author: 'Eduardo Aceves',
+    featured: true,
+  },
+  {
+    img: '../../images/wallJump.jpg',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/sneakAttack.jpg',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/Enemy1.jpeg',
     author: 'Eduardo Aceves',
     featured: true,
   },

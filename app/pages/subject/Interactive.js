@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-grid-system'
 //import Interactive Gallery component
 import InteractiveGallery from '../../components/InteractiveGallery'
+import ConceptArtGallery from '../../components/ConceptArtGallery'
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton';
 
@@ -15,20 +16,20 @@ export default class Interactive extends React.Component {
           <Col md={5}>
             <Card style={{ backgroundColor: "#9E9E9E"}}>
               <CardTitle
-                title="The Runners"
-                subtitle="3D mobile Video Game"
+                title="Crucible"
+                subtitle="AKA The Runners"
               />
               <CardText>
+                Crucible is a mobile 2.5 D metroidvania game with platforming and stealth elements, set in a dystopic science fiction world.
                 3D modeled the environment using Maya and Created Concept art for the Runners Video Game. 
               </CardText>
               <CardActions>
-                <FlatButton label="Information" />
-                <FlatButton label="Facebook" />
+                <FlatButton label="More" href="https://www.facebook.com/cruciblevideogame/"/>
               </CardActions>
               <CardMedia
-                overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+                overlay={<CardTitle title="Mobile Game" subtitle="The Game was designed using Unity game engine for mobile" />}
               >
-                <img src="../../images/ConceptArt.jpg" />
+                <img src="../../images/stock-playphone.jpg" />
               </CardMedia>  
             </Card>
           </Col>
@@ -36,6 +37,22 @@ export default class Interactive extends React.Component {
             <InteractiveGallery/>
           </Col>
       	</Row>
+        <Row>
+          <Col md={12}>
+            <Card style={{ backgroundColor: "#9E9E9E"}}>
+              <CardTitle
+                title="Concept Art"
+                subtitle="Environments and Storyboards"
+              />
+              <CardText>
+                A progreassion of the concept art process, including renderings of level design.
+              </CardText>
+              <CardMedia>
+                <ConceptArtGallery/>
+              </CardMedia>  
+            </Card>
+          </Col>
+        </Row>
       </div>
       //add Button list linking to other page subjects.
     );

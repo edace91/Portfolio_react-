@@ -1,8 +1,10 @@
 import React from 'react'
 import { Row, Col } from 'react-grid-system'
 //import photography Gallery component
-import GallerySection from '../../components/GallerySection'
-
+import GardenGallery from '../../components/GardenGallery'
+import CoupleGallery from '../../components/CoupleGallery'
+import HauntedGallery from '../../components/HauntedGallery'
+import QuidditchGallery from '../../components/QuidditchGallery'
 
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton';
@@ -15,7 +17,7 @@ export default class Photography extends React.Component {
       <div>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#B0BEC5"}}>
+            <Card style={{ backgroundColor: "#F5F5F5"}}>
               <CardTitle
                 style={{ color: "#212121"}}
                 title="Garden"
@@ -28,14 +30,14 @@ export default class Photography extends React.Component {
                 <FlatButton label="More" />
               </CardActions>
               <CardMedia>
-                <GallerySection/>
+                <GardenGallery/>
               </CardMedia>  
             </Card>
           </Col>
         </Row>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#B0BEC5"}}>
+            <Card style={{ backgroundColor: "#F5F5F5"}}>
               <CardTitle
                 title="Couples"
                 subtitle="4x5 large Format B&W"
@@ -47,14 +49,14 @@ export default class Photography extends React.Component {
                 <FlatButton label="More" />
               </CardActions>
               <CardMedia>
-                <GallerySection/>
+                <CoupleGallery/>
               </CardMedia>  
             </Card>
           </Col>
         </Row>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#B0BEC5"}}>
+            <Card style={{ backgroundColor: "#F5F5F5"}}>
               <CardTitle
                 title="Black Swan Inn"
                 subtitle="Medium Format B&W"
@@ -66,14 +68,14 @@ export default class Photography extends React.Component {
                 <FlatButton label="More" />
               </CardActions>
               <CardMedia>
-                <GallerySection/>
+                <HauntedGallery/>
               </CardMedia>  
             </Card>
           </Col>
         </Row>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#B0BEC5"}}>
+            <Card style={{ backgroundColor: "#F5F5F5"}}>
               <CardTitle
                 title="Quidditch Players"
                 subtitle="Medium Format and Large Format B&W"
@@ -85,7 +87,7 @@ export default class Photography extends React.Component {
                 <FlatButton label="More" />
               </CardActions>
               <CardMedia>
-                <GallerySection/>
+                <QuidditchGallery/>
               </CardMedia>  
             </Card>
           </Col>
