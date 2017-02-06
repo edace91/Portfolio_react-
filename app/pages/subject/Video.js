@@ -12,49 +12,66 @@ export default class Video extends React.Component {
       <div>
         <Row>
           <Col md={6}>
-            <Card style={{ backgroundColor: "#9E9E9E"}}>
+            <Card style={{ backgroundColor: "#FFB74D"}}>
               <CardTitle
                 title="Saul Vara Rivera Foundation"
                 subtitle="Short photo/animation depicting the story of the foundation"
               />
               <CardMedia>
-              
+                <img src="../../images/SVR-Logo.jpg" />
               </CardMedia>  
+              <CardActions>
+                <FlatButton label="View" href="https://vimeo.com/53085384"/>
+              </CardActions>
             </Card>
           </Col>
+
+
           <Col md={6} >
-            <Card style={{ backgroundColor: "#9E9E9E"}}>
+            <Card style={{ backgroundColor: "Black"}}>
               <CardTitle
                 title="Demo Reel"
                 subtitle="Showcasing visual effects experience"
               />
               <CardMedia>
-               
-              </CardMedia>  
+                <img src="../../images/DemoReel.png" />
+              </CardMedia> 
+              <CardActions>
+                <FlatButton label="View" href="https://vimeo.com/100355694"/>
+              </CardActions>
             </Card>
           </Col>
+
         </Row>
         <Row>
+
           <Col md={6}>
-            <Card style={{ backgroundColor: "#9E9E9E"}}>
+            <Card style={{ backgroundColor: "#03A9F4"}}>
               <CardTitle
                 title="Food"
                 subtitle="Short film"
               />
               <CardMedia>
-             
-              </CardMedia>  
+              <img src="../../images/food.png" />
+              </CardMedia> 
+               <CardActions>
+                <FlatButton label="View" href="https://vimeo.com/65231847"/>
+              </CardActions> 
             </Card>
           </Col>
+
           <Col md={6} >
-            <Card style={{ backgroundColor: "#9E9E9E"}}>
+            <Card style={{ backgroundColor: "#B71C1C"}}>
               <CardTitle
                 title="ACL"
                 subtitle="After Effects Animation"
               />
               <CardMedia>
-               
-              </CardMedia>  
+               <img src="../../images/ACl.png" />
+              </CardMedia> 
+              <CardActions>
+                <FlatButton label="View" href="https://vimeo.com/53085384"/>
+              </CardActions>  
             </Card>
           </Col>
         </Row>
