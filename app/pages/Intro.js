@@ -10,8 +10,9 @@ export default class Intro extends React.Component {
     return (
       <div>
         <Row>
+          <Col md={12}>
             <Card style={{ 
-              backgroundColor: "#78909C",
+              backgroundColor: "#52616B",
               padding: "75px",
               border:"30px",
               borderColor:"#78909C"
@@ -24,9 +25,12 @@ export default class Intro extends React.Component {
                 From web design to video work, each section includes  a collection of work and description of each project. Once in each section an info card will show information and more photos attributed to the specific project.
               </CardText>
             </Card>
+          </Col>
         </Row>
       	<Row>
-          <GallerySection/>
+          <Col md={12}>
+            <GallerySection/>
+          </Col>
       	</Row>
       </div>
       //add Button list linking to other page subjects.

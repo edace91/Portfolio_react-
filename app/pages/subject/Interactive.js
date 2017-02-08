@@ -14,7 +14,7 @@ export default class Interactive extends React.Component {
       <div>
       	<Row>
           <Col md={5}>
-            <Card style={{ backgroundColor: "#9E9E9E"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
                 title="Crucible"
                 subtitle="AKA The Runners"
@@ -37,9 +37,10 @@ export default class Interactive extends React.Component {
             <InteractiveGallery/>
           </Col>
       	</Row>
+        <br></br>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#9E9E9E"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
                 title="Concept Art"
                 subtitle="Environments and Storyboards"
@@ -53,6 +54,7 @@ export default class Interactive extends React.Component {
             </Card>
           </Col>
         </Row>
+        <br></br>
       </div>
       //add Button list linking to other page subjects.
     );

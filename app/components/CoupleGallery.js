@@ -10,6 +10,7 @@ const styles = {
     justifyContent: 'none',
   },
   gridList: {
+    width: "100%",
     display: 'flex',
     flexWrap: 'nowrap',
     overflowX: 'auto',
@@ -43,7 +44,7 @@ export default class CoupleGallery extends React.Component {
     return(
 
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2.2}>
+        <GridList style={styles.gridList} cols={2.2} cellHeight={400}>
           {tilesData.map((tile) => (
             <GridTile
               key={tile.img}

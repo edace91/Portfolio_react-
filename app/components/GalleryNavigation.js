@@ -22,57 +22,57 @@ export default class GalleryNavigation extends React.Component {
 
   render() {
     return (
-      <Paper zDepth={0} rounded={false} style={{ width:"100%", position:"absolute", left:"0"}}>
-        <BottomNavigation selectedIndex={this.state.selectedIndex} 
-          style= {{
-            padding: "20px",
+      
+        <Paper zDepth={0} rounded={false} style={{ width:"100%", position:"absolute",left:"0"}}>
+          <BottomNavigation selectedIndex={this.state.selectedIndex} 
+            style= {{
+              padding: "20px",
+              width: "100%"
+            }}
+          >
             
-            width: "100%"
-          }}
-        >
-          
-          <Link to={'/Gallery/WebDesign'}>
-            <BottomNavigationItem
-              label="Web Design"
-              icon={HardwareComputer}
-              onTouchTap={() => this.select(0)}
-              
-            />
-          </Link>
+            <Link to={'/Gallery/WebDesign'}>
+              <BottomNavigationItem
+                label="Web Design"
+                icon={HardwareComputer}
+                onTouchTap={() => this.select(0)}
+                s
+              />
+            </Link>
 
-          <Link to={'/Gallery/GraphicDesign'}>
-            <BottomNavigationItem
-              label="Graphic Design"
-              icon={ContentCreate}
-              onTouchTap={() => this.select(1)}
-            />
-          </Link>
+            <Link to={'/Gallery/GraphicDesign'}>
+              <BottomNavigationItem
+                label="Graphic Design"
+                icon={ContentCreate}
+                onTouchTap={() => this.select(1)}
+              />
+            </Link>
 
-          <Link to={'/Gallery/Interactive'}>
-            <BottomNavigationItem
-              label="Interactive"
-              icon={HardwareGamepad}
-              onTouchTap={() => this.select(2)}
-            />
-          </Link>
+            <Link to={'/Gallery/Interactive'}>
+              <BottomNavigationItem
+                label="Interactive"
+                icon={HardwareGamepad}
+                onTouchTap={() => this.select(2)}
+              />
+            </Link>
 
-          <Link to={'/Gallery/Photography'}>
-            <BottomNavigationItem
-              label="Photography"
-              icon={ImageCamera}
-              onTouchTap={() => this.select(3)}
-            />
-          </Link>
+            <Link to={'/Gallery/Photography'}>
+              <BottomNavigationItem
+                label="Photography"
+                icon={ImageCamera}
+                onTouchTap={() => this.select(3)}
+              />
+            </Link>
 
-          <Link to={'/Gallery/Video'}>
-            <BottomNavigationItem
-              label="Video"
-              icon={AvVideocam}
-              onTouchTap={() => this.select(4)}
-            />
-          </Link>
-        </BottomNavigation>
-      </Paper>
+            <Link to={'/Gallery/Video'}>
+              <BottomNavigationItem
+                label="Video"
+                icon={AvVideocam}
+                onTouchTap={() => this.select(4)}
+              />
+            </Link>
+          </BottomNavigation>
+        </Paper> 
     );
   }
 }

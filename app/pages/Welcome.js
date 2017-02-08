@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router'
-
 import { Row, Col } from 'react-grid-system'
 
 import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card'
@@ -11,11 +10,12 @@ export default class Welcome extends React.Component {
 
   render() {
     return (
+
       <Row>
         <Col md={12}>
           <Card 
               style={{ 
-                backgroundColor: "#546E7A",
+                backgroundColor: "#52616B",
                 padding: "50px",
                 border:"30px",
                 borderColor:"#546E7A",
@@ -24,11 +24,11 @@ export default class Welcome extends React.Component {
               }}
               containerStyle= {{border:"30px"}}>
             <CardTitle
-              title="Welcome"
-              subtitle="to my portfolio"
+              title="Eduardo Aceves"
+              subtitle="Graphic Designer and Web Developer"
             />
             <CardText>
-              Welcome to my portfolio! Hope you like what you see and contact me, thank you! 
+               
             </CardText>
             <CardActions>
               <Link to={'About'}>
@@ -47,6 +47,7 @@ export default class Welcome extends React.Component {
           </Card>
         </Col>
       </Row>
+   
     );
   }
 }

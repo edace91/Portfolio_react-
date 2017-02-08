@@ -18,29 +18,42 @@ const styles = {
 
 const tilesData = [
   {
-    img: '../../images/Airforce.jpg',
-    title: 'Airforce',
+    img: '../../images/PROMO_NEW_poster_FLATTENED.png',
     author: 'Eduardo Aceves',
     featured: true,
-  },
- 
-  {
-    img: '../../images/CoursePacket.jpg',
-    title: 'Marketing',
-    author: 'Eduardo Aceves',
-    featured: true,
-  },
-  {
-    img: '../../images/DiazImmigrationLaw_final.jpg',
-    title: 'Logos',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/ConceptArt.jpg',
-    title: 'Crucible',
-    author: 'Eduardo Aceves',
   },
   
+  {
+    img: '../../images/envelopes_insert_v7_4x9_Page_1.png',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/WF_Insert_3_price_change_Page_1.png',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/CoursePacket.jpg',
+    author: 'Eduardo Aceves',
+    featured: true,
+  },
+  {
+    img: '../../images/UT Line_Gift Holiday insert_V.3_Page_1.png',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/UT Line_Vday insert_v.2017_Page_1.png',
+    author: 'Eduardo Aceves',
+
+  },
+  {
+    img: '../../images/WF_Insert_3_price_change_Page_1.png',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/Final Invite.png',
+    author: 'Eduardo Aceves',
+    featured: true,
+  },
 ];
 
 /**
@@ -57,7 +70,7 @@ export default class GraphicGallery extends React.Component {
       <div style={styles.root}>
         <GridList
           cols={2}
-          cellHeight={200}
+          cellHeight={180}
           padding={1}
           style={styles.gridList}
         >

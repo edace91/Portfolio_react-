@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-grid-system'
 //import Graphic Design Gallery component
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
-import DSSection from '../../components/DSSection'
+import GraphicGallery from '../../components/GraphicGallery'
 import ABMSection from '../../components/ABMSection'
 import LogoSection from '../../components/LogoSection'
 import FlatButton from 'material-ui/FlatButton';
@@ -15,7 +15,9 @@ export default class GraphicDesign extends React.Component {
       <div>
         <Row>
           <Col md={6}>
-            <Card style={{ backgroundColor: "#D84315"}}>
+            <Card style={{ 
+              backgroundColor: "#52616B",
+          }}>
               <CardTitle>
                 <img style={{ width:"450px"}} src="../../images/knockout_university_formal_horizontal.png"/>
               </CardTitle>
@@ -23,16 +25,16 @@ export default class GraphicDesign extends React.Component {
               Several Marketing Campaigns and materials used to promote the various services that the Document Solutions department offers to the University. Through direct mail, inserts, and email blasts. 
               </CardText>
               <CardMedia> 
-                <DSSection/>
+                <GraphicGallery/>
               </CardMedia>  
             </Card>
           </Col>
 
           <Col md={6}>
-            <Card style={{ backgroundColor: "black"}}>
-              <CardMedia> 
-                <img src="../../images/ABM_Screenshot.png" />
-              </CardMedia> 
+            <Card style={{ backgroundColor: "#52616B"}}>
+              <CardTitle>
+                <img style={{ width:"120px"}} src="../../images/Austin-Band-Map-Logo(for-black-backgrounds).png"/>
+              </CardTitle>
               <CardText>
                 An interactive illustrative map of Austin music venues. 
               </CardText>
@@ -45,15 +47,15 @@ export default class GraphicDesign extends React.Component {
             </Card>
           </Col>
         </Row>
-      
+      <br></br>
         <Row>
           <Col md={6}>
-            <Card style={{ backgroundColor: "#607D8B"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
                 title="Logos"
                 subtitle="Collection of brand designs"
               />
-              <CardText style={{ color: "#212121"}}>
+              <CardText>
                 From Apps, charity foundations, to local buisnesses, logos crafted for a purpose.
               </CardText>
               <CardMedia> 
@@ -63,7 +65,7 @@ export default class GraphicDesign extends React.Component {
           </Col>
 
           <Col md={6}>
-            <Card style={{ backgroundColor: "#1A237E"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
                 title="Airman Heritage Museum"
                 subtitle="Philantropy Booklett"
@@ -75,11 +77,12 @@ export default class GraphicDesign extends React.Component {
                 <FlatButton label="Take a look" href="http://www.eduardoaceves.com/gallery/wp-content/uploads/2014/11/MKTG-AHF-online.pdf"/>
               </CardActions>
               <CardMedia> 
-                <img src="../../images/Airforce.jpg" />
+                <img src="../../images/Airforce.jpg"/>
               </CardMedia>
             </Card>
           </Col>
         </Row>
+        <br></br>
       </div>
     );
   }

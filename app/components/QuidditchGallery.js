@@ -21,10 +21,7 @@ const styles = {
 };
 
 const tilesData = [
-  {
-    img: '../../images/quidtich-guy.jpg',
-    author: 'Eduardo Aceves',
-  },
+  
   {
     img: '../../images/Quidditch.jpg',
     author: 'Eduardo Aceves',
@@ -35,6 +32,10 @@ const tilesData = [
   },
   {
     img: '../../images/19.q3.print.jpg',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/quidtich-guy.jpg',
     author: 'Eduardo Aceves',
   },
   {
@@ -51,7 +52,7 @@ export default class QuidditchGallery extends React.Component {
     return(
 
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2.2}>
+        <GridList style={styles.gridList} cols={2.2} cellHeight={400}>
           {tilesData.map((tile) => (
             <GridTile
               key={tile.img}

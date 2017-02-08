@@ -147,8 +147,8 @@ export default class NavBar extends React.Component {
           />
         </Drawer>
         <AppBar
-          title={<img src="../../images/EA_logo.jpg" style={{ width: '100px'}} alt="Eduardo Aceves"/>}
-          style={{ backgroundColor: "white", padding: "15px", boxShadow: "none"}}
+          title={<img src="../../images/EA_partial Logo_KO_.png" style={{ width: '150px', padding:"5px"}} alt="Eduardo Aceves"/>}
+          style={{ backgroundColor: "#C9D6DF", padding: "13px", marginBottom: "10px", boxShadow: "none"}}
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           onLeftIconButtonTouchTap={this.handleToggle}
         />

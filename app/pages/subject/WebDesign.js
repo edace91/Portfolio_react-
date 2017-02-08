@@ -12,7 +12,7 @@ export default class WebDesign extends React.Component {
       <div>
         <Row>
           <Col md={6} >
-            <Card style={{ backgroundColor: "#616161"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle>
                 <img style={{ width:"200px"}} src="../../images/votery_logo_Horizontal_KO.png" />
               </CardTitle>
@@ -31,7 +31,7 @@ information and voting history will be listed for their most recent legislative 
             </Card>
           </Col>
           <Col md={6}>
-            <Card style={{ backgroundColor: "#004D40"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle>
                 <img style={{ width:"250px"}} src="../../images/logo.png" />
               </CardTitle>
@@ -46,9 +46,9 @@ information and voting history will be listed for their most recent legislative 
                 <img src="../../images/dog_girl_beach.jpg" />
               </CardMedia>  
             </Card>
-            
           </Col>
         </Row>
+        <br></br>
       </div>
       //add Button list linking to other page subjects.
     );

@@ -7,16 +7,12 @@ const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'none',
+    justifyContent: 'space-around',
   },
   gridList: {
-    display: 'flex',
-    flexWrap: 'nowrap',
-    overflowX: 'auto',
-
-  },
-  titleStyle: {
-    color: 'rgb(255, 255, 255)',
+    width: "100%",
+    height: 550,
+    overflowY: 'auto',
   },
 };
 
@@ -24,24 +20,21 @@ const tilesData = [
   {
     img: '../../images/Votery_logo.jpg',
     author: 'Eduardo Aceves',
-    style: '{{ width: 100px}}',
+    featured: true,
   },
   {
     img: '../../images/Petripper_gray.jpg',
-    author: 'Eduardo Aceves',
-  },
-  
-  {
-    img: '../../images/DiazImmigrationLaw_final.jpg',
     author: 'Eduardo Aceves',
   },
   {
     img: '../../images/SVR-Logo.jpg',
     author: 'Eduardo Aceves',
   },
+  
   {
-    img: '../../images/FA-logo.jpg',
+    img: '../../images/DiazImmigrationLaw_final.jpg',
     author: 'Eduardo Aceves',
+    featured: true,
   },
 ];
 
@@ -53,20 +46,28 @@ export default class LogoSection extends React.Component {
     return(
 
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2.2}>
+        <GridList
+          cols={2}
+          cellHeight={200}
+          padding={1}
+          style={styles.gridList}
+        >
           {tilesData.map((tile) => (
             <GridTile
               key={tile.img}
               title={tile.title}
-              actionIcon={<IconButton><StarBorder color="rgb(0, 188, 212)" /></IconButton>}
-              titleStyle={styles.titleStyle}
-              titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+              actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+              actionPosition="left"
+              titlePosition="top"
+              titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+              cols={tile.featured ? 2 : 1}
+              rows={tile.featured ? 2 : 1}
             >
               <img src={tile.img} />
             </GridTile>
           ))}
         </GridList>
-      </div>  
+      </div>
     );
-  } 
+  }
 }

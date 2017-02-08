@@ -7,23 +7,20 @@ const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'none',
+    justifyContent: 'space-around',
   },
   gridList: {
-    display: 'flex',
-    flexWrap: 'nowrap',
-    overflowX: 'auto',
-
-  },
-  titleStyle: {
-    color: 'rgb(255, 255, 255)',
+    width: "100%",
+    height: 500,
+    overflowY: 'auto',
   },
 };
 
 const tilesData = [
   {
-    img: '../../images/lamberts_web.png',
+    img: '../../images/AustinBandMap_Web.png',
     author: 'Eduardo Aceves',
+    featured: true,
   },
   {
     img: '../../images/HITW_web.png',
@@ -31,14 +28,6 @@ const tilesData = [
   },
   {
     img: '../../images/Mohawk_web.png',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/Moody_web.png',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/parish_Web .png',
     author: 'Eduardo Aceves',
   },
   {
@@ -50,16 +39,22 @@ const tilesData = [
     author: 'Eduardo Aceves',
   },
   {
-    img: '../../images/emos_web.png',
+    img: '../../images/parish_Web .png',
     author: 'Eduardo Aceves',
+    featured: true,
   },
   {
     img: '../../images/Backyard_web.png',
     author: 'Eduardo Aceves',
   },
   {
-    img: '../../images/Austin_360_web.png',
+    img: '../../images/lamberts_web.png',
     author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/emos_web.png',
+    author: 'Eduardo Aceves',
+    featured: true,
   },
 ];
 
@@ -71,20 +66,28 @@ export default class ABMSection extends React.Component {
     return(
 
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2.2}>
+        <GridList
+          cols={2}
+          cellHeight={200}
+          padding={1}
+          style={styles.gridList}
+        >
           {tilesData.map((tile) => (
             <GridTile
               key={tile.img}
               title={tile.title}
-              actionIcon={<IconButton><StarBorder color="rgb(0, 188, 212)" /></IconButton>}
-              titleStyle={styles.titleStyle}
-              titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+              actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+              actionPosition="left"
+              titlePosition="top"
+              titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+              cols={tile.featured ? 2 : 1}
+              rows={tile.featured ? 2 : 1}
             >
               <img src={tile.img} />
             </GridTile>
           ))}
         </GridList>
-      </div>  
+      </div>
     );
-  } 
+  }
 }

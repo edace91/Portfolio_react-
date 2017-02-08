@@ -17,13 +17,12 @@ export default class Photography extends React.Component {
       <div>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#F5F5F5"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
-                style={{ color: "#212121"}}
                 title="Garden"
                 subtitle="Digital color DSLR"
               />
-              <CardText style={{ color: "#212121"}}>
+              <CardText>
                 Series depicting the backyard of my parents, through composition and thoughful symbolism a story is revealed. One just as ephemeral as a spring day.
               </CardText>
               <CardActions>
@@ -35,14 +34,15 @@ export default class Photography extends React.Component {
             </Card>
           </Col>
         </Row>
+        <br></br>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#F5F5F5"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
                 title="Couples"
                 subtitle="4x5 large Format B&W"
               />
-              <CardText style={{ color: "#212121"}}>
+              <CardText>
                 Series depicting couples at different points of their relationship.
               </CardText>
               <CardActions>
@@ -54,14 +54,15 @@ export default class Photography extends React.Component {
             </Card>
           </Col>
         </Row>
+        <br></br>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#F5F5F5"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
                 title="Black Swan Inn"
                 subtitle="Medium Format B&W"
               />
-              <CardText style={{ color: "#212121"}}>
+              <CardText>
                 Architectural and Interior photo series of the haunted Black Swan in in San Antonio, TX.
               </CardText>
               <CardActions>
@@ -73,14 +74,15 @@ export default class Photography extends React.Component {
             </Card>
           </Col>
         </Row>
+        <br></br>
         <Row>
           <Col md={12}>
-            <Card style={{ backgroundColor: "#F5F5F5"}}>
+            <Card style={{ backgroundColor: "#52616B"}}>
               <CardTitle
                 title="Quidditch Players"
                 subtitle="Medium Format and Large Format B&W"
               />
-              <CardText style={{ color: "#212121"}}>
+              <CardText>
                 Series of portraits depicting National Champions, The University of Texas Quidditch Team.
               </CardText>
               <CardActions>
@@ -92,6 +94,7 @@ export default class Photography extends React.Component {
             </Card>
           </Col>
         </Row>
+        <br></br>
       </div>
       //add Button list linking to other page subjects.
     );
