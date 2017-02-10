@@ -2,6 +2,8 @@ import React from 'react'
 import { Row, Col } from 'react-grid-system'
 //import Graphic Design Gallery component
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
+import Sample from '../../components/Sample'
+import ABMGallery from '../../components/ABMGallery'
 import GraphicGallery from '../../components/GraphicGallery'
 import ABMSection from '../../components/ABMSection'
 import LogoSection from '../../components/LogoSection'
@@ -21,12 +23,13 @@ export default class GraphicDesign extends React.Component {
               <CardTitle>
                 <img style={{ width:"450px"}} src="../../images/knockout_university_formal_horizontal.png"/>
               </CardTitle>
-              <CardText>
+              <CardText style={{lineHeight:"200%"}}>
               Several Marketing Campaigns and materials used to promote the various services that the Document Solutions department offers to the University. Through direct mail, inserts, and email blasts. 
               </CardText>
               <CardMedia> 
                 <GraphicGallery/>
-              </CardMedia>  
+              </CardMedia>
+              <Sample/>  
             </Card>
           </Col>
 
@@ -35,7 +38,7 @@ export default class GraphicDesign extends React.Component {
               <CardTitle>
                 <img style={{ width:"120px"}} src="../../images/Austin-Band-Map-Logo(for-black-backgrounds).png"/>
               </CardTitle>
-              <CardText>
+              <CardText style={{lineHeight:"200%"}}>
                 An interactive illustrative map of Austin music venues. 
               </CardText>
               <CardActions>
@@ -43,7 +46,8 @@ export default class GraphicDesign extends React.Component {
               </CardActions>
               <CardMedia> 
                 <ABMSection/>
-              </CardMedia>  
+              </CardMedia> 
+              <ABMGallery/>
             </Card>
           </Col>
         </Row>
@@ -55,7 +59,7 @@ export default class GraphicDesign extends React.Component {
                 title="Logos"
                 subtitle="Collection of brand designs"
               />
-              <CardText>
+              <CardText style={{lineHeight:"200%"}}>
                 From Apps, charity foundations, to local buisnesses, logos crafted for a purpose.
               </CardText>
               <CardMedia> 
@@ -70,7 +74,7 @@ export default class GraphicDesign extends React.Component {
                 title="Airman Heritage Museum"
                 subtitle="Philantropy Booklett"
               />
-              <CardText>
+              <CardText style={{lineHeight:"200%"}}>
                 Marketing packet for the promotion and collection of funds for the creation of a Airforce museum in San Antonio, Texas. 
               </CardText>
               <CardActions>

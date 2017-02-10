@@ -39,8 +39,8 @@ export default class About extends React.Component {
               title="About me"
               subtitle="Eduardo Aceves"
             />
-            <CardText>
-              I am a designer, proficient in print and web design, currently enrolled in a coding bootcamp.
+            <CardText style= {{ fontStyle:"oblique", "line-height":"200%"}}>
+               I am a graphic artist that has the ability to translate any visual idea into a reality, through an extensive knowledge in digital art tools as well as an ability to collaborate with clients to reach desired goal. While other graphic design sources can become impersonal and generic, my designs draw from traditional fine art practices like drawing, painting, and photography to produce unique, creative and aesthetically pleasing digital art. In this way I give employers and customers the skills and creative talent to make any project, whether it be marketing materials, web illustrations, or concept creation, a true work of art. The work I am most interested in delving into is interactive art, particularly in entertainment.
             </CardText>
           </Card>
         </Col>

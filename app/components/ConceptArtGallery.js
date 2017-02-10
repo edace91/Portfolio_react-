@@ -59,7 +59,7 @@ export default class ConceptArtSection extends React.Component {
     return(
 
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2.2}>
+        <GridList style={styles.gridList} cols={2.2} cellHeight={300}>
           {tilesData.map((tile) => (
             <GridTile
               key={tile.img}

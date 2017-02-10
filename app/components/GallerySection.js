@@ -2,6 +2,9 @@ import React from 'react';
 import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import { Link } from 'react-router'
+import ImageZoom from 'react-medium-image-zoom'
+
 
 const styles = {
   root: {
@@ -21,39 +24,34 @@ const styles = {
 };
 
 const tilesData = [
+
   {
     img: '../../images/haunted.jpg',
-    title: 'Haunted',
     author: 'Eduardo Aceves',
   },
+
   {
     img: '../../images/Fence.jpg',
-    title: 'Fence',
     author: 'Eduardo Aceves',
   },
   {
     img: '../../images/Quidditch.jpg',
-    title: 'Quidditch',
     author: 'Eduardo Aceves',
   },
   {
     img: '../../images/CoursePacket.jpg',
-    title: 'Marketing',
     author: 'Eduardo Aceves',
   },
   {
     img: '../../images/DiazImmigrationLaw_final.jpg',
-    title: 'Logos',
     author: 'Eduardo Aceves',
   },
   {
     img: '../../images/ConceptArt.jpg',
-    title: 'Crucible',
     author: 'Eduardo Aceves',
   },
   {
     img: '../../images/Airforce.jpg',
-    title: 'Airforce',
     author: 'Eduardo Aceves',
   },
 ];
@@ -66,7 +64,7 @@ export default class GallerySection extends React.Component {
     return(
 
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2.2}>
+        <GridList style={styles.gridList} cols={2.2} padding={0} cellHeight={300}>
           {tilesData.map((tile) => (
             <GridTile
               key={tile.img}

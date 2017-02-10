@@ -16,7 +16,7 @@ export default class WebDesign extends React.Component {
               <CardTitle>
                 <img style={{ width:"200px"}} src="../../images/votery_logo_Horizontal_KO.png" />
               </CardTitle>
-              <CardText>
+              <CardText style={{"line-height":"200%"}}>
                  Votery, it is the easiest way of tracking your representatives voting history. Just enter
 your state and your representatives will be listed for you to select. Once you choose a rep, their
 information and voting history will be listed for their most recent legislative choices.
@@ -35,7 +35,7 @@ information and voting history will be listed for their most recent legislative 
               <CardTitle>
                 <img style={{ width:"250px"}} src="../../images/logo.png" />
               </CardTitle>
-              <CardText>
+              <CardText style={{"line-height":"200%"}}>
                  Pet travel made easy. Plan your trip find pet friendly places, be ready for anything.Our pets are part of our family and we would much rather take them along with us than leave them behind.
               </CardText>
               <CardActions>

@@ -3,6 +3,7 @@ import { Row, Col } from 'react-grid-system'
 //import Interactive Gallery component
 import InteractiveGallery from '../../components/InteractiveGallery'
 import ConceptArtGallery from '../../components/ConceptArtGallery'
+import ConceptArtLightbox from '../../components/ConceptArtLightbox'
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton';
 
@@ -19,7 +20,7 @@ export default class Interactive extends React.Component {
                 title="Crucible"
                 subtitle="AKA The Runners"
               />
-              <CardText>
+              <CardText style={{"line-height":"200%"}}>
                 Crucible is a mobile 2.5 D metroidvania game with platforming and stealth elements, set in a dystopic science fiction world.
                 3D modeled the environment using Maya and Created Concept art for the Runners Video Game. 
               </CardText>
@@ -50,7 +51,8 @@ export default class Interactive extends React.Component {
               </CardText>
               <CardMedia>
                 <ConceptArtGallery/>
-              </CardMedia>  
+              </CardMedia> 
+              <ConceptArtLightbox/> 
             </Card>
           </Col>
         </Row>

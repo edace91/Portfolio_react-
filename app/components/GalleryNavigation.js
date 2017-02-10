@@ -36,7 +36,7 @@ export default class GalleryNavigation extends React.Component {
                 label="Web Design"
                 icon={HardwareComputer}
                 onTouchTap={() => this.select(0)}
-                s
+                
               />
             </Link>
 

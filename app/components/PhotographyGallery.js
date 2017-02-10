@@ -18,41 +18,20 @@ const styles = {
 
 const tilesData = [
   {
-    img: '../../images/haunted.jpg',
-    title: 'Haunted',
-    author: 'Eduardo Aceves',
+    img: '../../images/11bUnityProject.jpg',
     featured: true,
   },
   {
-    img: '../../images/Fence.jpg',
-    title: 'Fence',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/Quidditch.jpg',
-    title: 'Quidditch',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/CoursePacket.jpg',
-    title: 'Marketing',
-    author: 'Eduardo Aceves',
+    img: '../../images/12bColorAnomaly.jpg',
     featured: true,
   },
   {
-    img: '../../images/DiazImmigrationLaw_final.jpg',
-    title: 'Logos',
-    author: 'Eduardo Aceves',
+    img: '../../images/imgcompas005.jpg',
+    featured: true,
   },
   {
-    img: '../../images/ConceptArt.jpg',
-    title: 'Crucible',
-    author: 'Eduardo Aceves',
-  },
-  {
-    img: '../../images/Airforce.jpg',
-    title: 'Airforce',
-    author: 'Eduardo Aceves',
+    img: '../../images/HypnoCats.jpg',
+    featured: true,
   },
 ];
 
@@ -70,7 +49,7 @@ export default class PhotographyGallery extends React.Component {
       <div style={styles.root}>
         <GridList
           cols={2}
-          cellHeight={200}
+          cellHeight={475}
           padding={1}
           style={styles.gridList}
         >

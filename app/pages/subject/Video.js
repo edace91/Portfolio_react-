@@ -2,7 +2,8 @@ import React from 'react'
 import { Row, Col } from 'react-grid-system'
 //import Video Gallery component
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
-import FlatButton from 'material-ui/FlatButton';
+import FlatButton from 'material-ui/FlatButton'
+import ImageZoom from 'react-medium-image-zoom'
 
 export default class Video extends React.Component {
 

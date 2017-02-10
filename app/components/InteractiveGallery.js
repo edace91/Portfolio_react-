@@ -11,7 +11,7 @@ const styles = {
   },
   gridList: {
     width: "100%",
-    height: 515,
+    height: 560,
     overflowY: 'auto',
   },
 };
@@ -66,7 +66,7 @@ export default class VideoGallery extends React.Component {
       <div style={styles.root}>
         <GridList
           cols={2}
-          cellHeight={200}
+          cellHeight={300}
           padding={1}
           style={styles.gridList}
         >
