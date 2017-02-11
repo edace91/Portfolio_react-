@@ -16,7 +16,7 @@ export default class ABMGallery extends React.Component {
         { src: '../../images/Mohawk_web.png' }, 
         { src: '../../images/Red7_web.png'},
         { src: '../../images/Frank_Erwin_Center_web.png' },
-        { src: '../../images/parish_Web .png' },  
+        { src: '../../images/parish_Web.png' },  
         { src: '../../images/Backyard_web.png'},
         { src: '../../images/lamberts_web.png'}, 
         { src: '../../images/emos_web.png'}, 

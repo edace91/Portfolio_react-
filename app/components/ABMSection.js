@@ -39,7 +39,7 @@ const tilesData = [
     author: 'Eduardo Aceves',
   },
   {
-    img: '../../images/parish_Web .png',
+    img: '../../images/parish_Web.png',
     author: 'Eduardo Aceves',
     featured: true,
   },

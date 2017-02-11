@@ -17,12 +17,10 @@ export default class Intro extends React.Component {
               borderColor:"#78909C"
             }}>
               <CardTitle
-                title="Gallery"
-                subtitle="A collection of projects"
+                title="Project gallery"
+                subtitle="A collection of previous works"
               />
-              <CardText>
-                From web design to video work, each section includes  a collection of work and description of each project. Once in each section an info card will show information and more photos attributed to the specific project.
-              </CardText>
+             
             </Card>
             <CardMedia> 
                 <GallerySection/>

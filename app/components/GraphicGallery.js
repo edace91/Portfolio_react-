@@ -50,6 +50,11 @@ const tilesData = [
     author: 'Eduardo Aceves',
     featured: true,
   },
+  {
+    img: '../../images/Rowling menu_final_2_Page_1.png',
+    author: 'Eduardo Aceves',
+    featured: true,
+  },
 ];
 
 /**

@@ -39,8 +39,13 @@ export default class About extends React.Component {
               title="About me"
               subtitle="Eduardo Aceves"
             />
-            <CardText style= {{ fontStyle:"oblique", "line-height":"200%"}}>
-               I am a graphic artist that has the ability to translate any visual idea into a reality, through an extensive knowledge in digital art tools as well as an ability to collaborate with clients to reach desired goal. While other graphic design sources can become impersonal and generic, my designs draw from traditional fine art practices like drawing, painting, and photography to produce unique, creative and aesthetically pleasing digital art. In this way I give employers and customers the skills and creative talent to make any project, whether it be marketing materials, web illustrations, or concept creation, a true work of art. The work I am most interested in delving into is interactive art, particularly in entertainment.
+            <CardText style= {{lineHeight:"150%", textIndent:"40px"}}>
+              I’m a designer proficient in both print and web design. I Live and work in Austin, Texas. Once completing my undergrad at the University of Texas at Austin in 2014 and working for its print shop soon after, I took part in a full stack coding bootcamp within the university. The intensive six month certification program expanded my traditional studio art skill set into web design. 
+              Though I am used to working individually, I enjoy and excel working within a team environment.Usually taking the leading role in the conceptualizing process and practicing good communication throughout production with all team members. 
+              My ideal work environment is a challenging and creative atmosphere that allows me to grow as a designer all while creating new and innovative projects. Through hard work and determination I hope the  projects I work on, as cheesy as it sounds, will ultimately make the world a better place.
+            </CardText>
+            <CardText style= {{lineHeight:"150%", textIndent:"40px"}}>
+              Aside from working or practicing my coding skills, I spend part of my free time at the University Gym. Ever since high school, weight training has been a way to maintain a healthy lifestyle and also has taught me the power of discipline and practice in order to build strength and see progress. In congruence with exercise Another aspect of the healthy lifestyle I try to lead is another also one of my hobbies, cooking. Spending time in the kitchen trying out different recipes that use local produce is challenging at times but is mainly rewarding and delicious. To unwind film is a passion of mine, from the high brow cinema of the Art house films, to contemporary animation and even social documentaries, film fascinates and inspires me more than any other medium. Aside from those interests, I hope to have more free time and opportunities to design for non profits or charities as have had in the past. 
             </CardText>
           </Card>
         </Col>

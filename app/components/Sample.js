@@ -17,7 +17,9 @@ export default class Sample extends React.Component {
         { src: '../../images/UT Line_Gift Holiday insert_V.3_Page_1.png' },
         { src: '../../images/UT Line_Vday insert_v.2017_Page_1.png' },
         { src: '../../images/WF_Insert_3_price_change_Page_1.png' },  
-        { src: '../../images/Final Invite.png'} 
+        { src: '../../images/Final Invite.png'},
+        { src: '../../images/Rowling menu_final_2_Page_1.png'}
+
       ]
     }
     this.onOpen = this.onOpen.bind(this)

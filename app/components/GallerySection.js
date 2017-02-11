@@ -26,12 +26,12 @@ const styles = {
 const tilesData = [
 
   {
-    img: '../../images/haunted.jpg',
+    img: '../../images/ScreenShot best.jpg',
     author: 'Eduardo Aceves',
   },
 
   {
-    img: '../../images/Fence.jpg',
+    img: '../../images/Rowling menu_final_2_Page_1.png',
     author: 'Eduardo Aceves',
   },
   {
@@ -46,12 +46,21 @@ const tilesData = [
     img: '../../images/DiazImmigrationLaw_final.jpg',
     author: 'Eduardo Aceves',
   },
+  
   {
-    img: '../../images/ConceptArt.jpg',
+    img: '../../images/Promo Direct mail piece_2_Page_1.png',
     author: 'Eduardo Aceves',
   },
   {
-    img: '../../images/Airforce.jpg',
+    img: '../../images/lamberts_web.png',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/Sewer.jpg',
+    author: 'Eduardo Aceves',
+  },
+  {
+    img: '../../images/food.png',
     author: 'Eduardo Aceves',
   },
 ];

@@ -53,6 +53,10 @@ const tilesData = [
     img: '../../images/WF_Insert_3_price_change_Page_1.png',
     author: 'Eduardo Aceves',
   },
+  {
+    img: '../../images/Rowling menu_final_2_Page_1.png',
+    author: 'Eduardo Aceves',
+  },
 ];
 
 
