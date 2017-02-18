@@ -61,15 +61,14 @@ export default class Interactive extends React.Component {
               />
               <CardText expandable={true} style={{"line-height":"200%", textIndent:"40px"}}>
                 I graduated from UT Austin with a BA in Studio Art focusing in Digital art and Media. During my college career I mainly delved into the fine arts, covering art and design history while also training my eye in concepts such as composition and color theory. Mastering these concepts through classes that interested me the most, particularly high level black and white analog and digital photography classes. Once senior year began, broadening my curriculum into other departments outside of the fine arts became a possibility by enrolling in the bridging disciplines program. 
-                <br></br>The program allowed me to enroll in visual e ects classes under the film and television school; it also required me to take computer science courses. All this exposure to di erent areas of study culminated into the Capstone program. The capstone program is a video game development program UT o ers, it brings together students from the arts, computer sciences, engineering, film and television to create a working 3D video game. I was accepted into this special course and became the
-                lead artist for the video game our team developed. This experience was the most eye opening class in my undergrad. It consequentially made me change the way I created art by forcing me to work in a team in which each member had their unique specialization. I got the opportunity to learn how to 3d model environments and work collaboratively in git hub, and finally present my game to video game industry professionals from several video game companies and have them play test it. Each experience and lesson in my undergrad culminated in realizing that I wanted to continue on to working in the digital realm, applying my artistic skills to something within the tech industry.
+                <br></br>The program allowed me to enroll in visual effects classes under the film and television school; it also required me to take computer science courses. All this exposure to di erent areas of study culminated into the Capstone program. The capstone program is a video game development program UT offers, it brings together students from the arts, computer sciences, engineering, film and television to create a working 3D video game. I was accepted into this special course and became the lead concept artist for the video game our team developed. This experience was the most eye opening class in my undergrad. It consequentially made me change the way I created art by forcing me to work in a team in which each member had their unique specialization. I got the opportunity to learn how to 3d model environments and work collaboratively in github, and finally present my game to video game industry professionals from several video game companies and have them play test it. Each experience and lesson in my undergrad culminated in realizing that I wanted to continue on to working in the digital realm, applying my artistic skills to something within the tech industry.
               </CardText>
             </Card>
           </Col>
         </Row>
         <br></br>
       </div>
-      //add Button list linking to other page subjects.
+      
     );
   }
 }
